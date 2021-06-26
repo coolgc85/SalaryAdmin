@@ -19,7 +19,6 @@ public class SalaryResource {
 
     @GetMapping("/salary")
     List<EmployeeSalaryReportDTO> getSalaryReport(@RequestParam(required = false) Long employeeId){
-        System.out.println(employeeId);
         return salarySevice.getSalaryReport(employeeId);
 
     }
